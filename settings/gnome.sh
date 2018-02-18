@@ -61,6 +61,8 @@ gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-to 7.
 # Disable Autorun
 gsettings set org.gnome.desktop.media-handling autorun-never true
 
+# Disable screen rotation
+gsettings set org.gnome.settings-daemon.peripherals.touchscreen orientation-lock true
 
 ##############
 # Extensions #
