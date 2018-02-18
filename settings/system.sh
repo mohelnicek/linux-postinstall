@@ -4,9 +4,6 @@
 #sudo timedatectl set-ntp true
 #sudo systemctl restart ntpd
 
-# Lower volume to 0%
-amixer -D pulse sset Master 0%
-
 # Remove EasyTag from default file explorer list
 #sudo sed -i.bak -e "s@inode/directory=easytag.desktop;@inode/directory=@" /usr/share/applications/mimeinfo.cache
 
