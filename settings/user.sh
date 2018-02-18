@@ -38,6 +38,10 @@ amixer -D pulse sset Master 0%
 # Disable bluetooth
 rfkill block bluetooth
 
+# Configure git
+git config --global user.name "Petr Mohelník"
+git config --global user.email "mohelnik.petr@gmail.com"
+
 # Set Nautilus to show hidden files
 #dconf write /org/gtk/settings/file-chooser/show-hidden true
 
