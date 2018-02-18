@@ -49,6 +49,7 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,c
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'cz')]"
 
 # Touchbar settings
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
 #gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
 #gsettings set org.gnome.desktop.peripherals.touchpad edge-scrolling-enabled true
 
