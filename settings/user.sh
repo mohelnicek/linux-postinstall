@@ -35,6 +35,9 @@
 # Lower volume to 0%
 amixer -D pulse sset Master 0%
 
+# Disable bluetooth
+rfkill block bluetooth
+
 # Set Nautilus to show hidden files
 #dconf write /org/gtk/settings/file-chooser/show-hidden true
 
