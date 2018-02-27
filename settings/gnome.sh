@@ -50,6 +50,7 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 
 # Touchbar settings
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+gsettings set org.gnome.desktop.peripherals.touchpad speed 1.0
 #gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
 #gsettings set org.gnome.desktop.peripherals.touchpad edge-scrolling-enabled true
 
