@@ -1,3 +1,22 @@
 {
-    "editor.formatOnPaste": true
+    "workbench.colorTheme": "Night Owl",
+    "git.confirmSync": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "editor.formatOnPaste": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.labelFormat": "medium",
+    "workbench.editor.showIcons": false,
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.statusBar.feedback.visible": false,
+    "window.menuBarVisibility": "toggle",
+    "window.newWindowDimensions": "maximized",
+    "window.restoreWindows": "all",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "zenMode.hideTabs": false,
+    "explorer.autoReveal": false,
+    "search.smartCase": true,
+    "zenMode.centerLayout": false,
 }

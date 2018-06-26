@@ -32,6 +32,11 @@
     #newgrp - &
 }
 
+# Copy VSCode settings
+[[ -f ~/.config/Code/User/settings.json ]] && mv ~/.config/Code/User/settings.json ~/.config/Code/User/settings.json.bak
+mkdir -p "~/.config/Code/User"
+cp ./user/vscode/settings.json ~/.config/Code/User/settings.json
+
 # Lower volume to 0%
 amixer -D pulse sset Master 0%
 
@@ -50,4 +55,3 @@ git config --global user.email "mohelnik.petr@gmail.com"
 
 # Add Ruby Gem user directory to PATH variable
 #[[ $(grep -c "Gem.user_dir" ~/.bashrc) -eq 0 ]] && [[ -d $(ruby -e "print Gem.user_dir") ]] &&  echo 'export PATH=$PATH:$(ruby -e "print Gem.user_dir")/bin' >> ~/.bashrc
-
