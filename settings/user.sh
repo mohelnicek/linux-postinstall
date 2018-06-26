@@ -22,6 +22,9 @@
 [[ $(grep -c "alias code" ~/.bashrc 2>/dev/null) -eq 0 ]] && echo "alias code='code .'" >> ~/.bashrc
 [[ $(grep -c "alias powershell" ~/.bashrc 2>/dev/null) -eq 0 ]] && echo "alias powershell='docker run -it microsoft/powershell'" >> ~/.bashrc
 
+# Set bash tab completion to ignore case
+[[ $(grep -c "set completion-ignore-case on" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "set completion-ignore-case on" >> ~/.inputrc
+
 # Create symlink to media for current user
 [[ -L ~/media ]] || ln -s /media/$USERNAME ~/media
 
