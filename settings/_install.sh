@@ -26,7 +26,6 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 # Update after setting apt sources
 sudo apt update
 
-
 # Software instalation
 sudo apt install -y \
     vim  `# text editors` \
@@ -52,6 +51,13 @@ sudo snap install --classic vscode
 sudo snap install --classic atom
 sudo snap install discord
 sudo snap install brave
+
+# Install vscode extensions
+code --install-extension EditorConfig.EditorConfig
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension ms-python.python
+code --install-extension octref.vetur
+code --install-extension sdras.night-owl
 
 # Pull docker images
 sudo docker pull microsoft/powershell:latest
@@ -84,4 +90,3 @@ gsettings set org.gnome.shell disable-user-extensions false
 # Removing unwanted packages
 sudo apt purge -y geary
 sudo apt autoremove -y
-
