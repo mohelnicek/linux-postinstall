@@ -12,4 +12,6 @@ sudo pip3 --exists-action i install \
 	  pyinstaller  `# executable bundling`
 
 # Install Node packages
-sudo npm install -g create-react-app
+sudo npm i npm -g
+sudo npm i -g create-react-app
+sudo npm i -g @vue/cli
