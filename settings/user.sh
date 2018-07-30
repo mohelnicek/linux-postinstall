@@ -36,8 +36,8 @@
 }
 
 # Copy VSCode settings
-[[ -f ~/.config/Code/User/settings.json ]] && mv ~/.config/Code/User/settings.json ~/.config/Code/User/settings.json.bak
 mkdir -p "~/.config/Code/User"
+[[ -f ~/.config/Code/User/settings.json ]] && mv ~/.config/Code/User/settings.json ~/.config/Code/User/settings.json.bak
 cp ./user/vscode/settings.json ~/.config/Code/User/settings.json
 
 # Lower volume to 0%
