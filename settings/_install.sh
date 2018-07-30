@@ -31,7 +31,7 @@ sudo apt install -y \
     vim  `# text editors` \
     texlive-full gummi  `# latex` \
     chromium-browser thunderbird thunderbird-locale-cs google-chrome-stable  `# browser/e-mail` \
-    python python3 python3-pip perl ruby jekyll nodejs npm php composer valgrind haskell-platform rustc cargo openjdk-8-jre openjdk-8-jdk openjdk-9-jre openjdk-9-jdk scilab gnat  `# programming` \
+    python python3 python3-pip perl ruby jekyll nodejs npm php composer valgrind haskell-platform rustc cargo openjdk-8-jre openjdk-8-jdk openjdk-11-jre openjdk-11-jdk scilab gnat  `# programming` \
     epydoc-doc git  `# documentation and version control` \
     wine32 wine64 playonlinux steam  `# windows compatibility and games` \
     inkscape inkscape-open-symbols svgtune gimp  `# image tools` \
