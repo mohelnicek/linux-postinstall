@@ -9,3 +9,6 @@
 
 # Add noacpi to kernel parameters on HP 530 laptop
 [[ $(sudo dmidecode | grep -c -i "HP 530")  -ne 0 ]] && [ $(grep -c -i "noacpi" /etc/default/grub ) -eq 0 ] && sudo sed -i -- 's/^GRUB_CMDLINE_LINUX="/GRUB_CMDLINE_LINUX="noacpi /' /etc/default/grub && sudo update-grub
+
+# Set internal graphics as default for HP Pavilion laptop
+[[ $(sudo dmidecode | grep -c -i "HP Pavilion")  -ne 0 ]] && sudo system76-power graphics intel && sudo system76-power graphics power auto
