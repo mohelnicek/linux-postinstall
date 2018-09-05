@@ -23,6 +23,11 @@
 [[ $(grep -c "alias powershell" ~/.bashrc 2>/dev/null) -eq 0 ]] && echo "alias powershell='docker run -it microsoft/powershell'" >> ~/.bashrc
 
 # Set bash tab completion to ignore case
+[[ -e ~/.inputrc ]] && (
+	[[ $(grep -c "include /etc/inputrc" ~/.inputrc) -eq 0 ]] && (echo "\$include /etc/inputrc"; cat ~/.inputrc) > ~/.inputrc
+) || (
+	echo "\$include /etc/inputrc" > ~/.inputrc
+)
 [[ $(grep -c "set completion-ignore-case on" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "set completion-ignore-case on" >> ~/.inputrc
 
 # Create symlink to media for current user
