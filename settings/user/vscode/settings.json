@@ -1,5 +1,9 @@
 {
-    "workbench.colorTheme": "Night Owl",
+    "[bat]": {
+        "files.encoding": "cp852",
+        "editor.tabSize": 4,
+    },
+    "workbench.colorTheme": "Night Owl No Italics",
     "git.confirmSync": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -21,3 +25,4 @@
     "zenMode.centerLayout": false,
     "zenMode.hideActivityBar": false,
 }
+
