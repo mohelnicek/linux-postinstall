@@ -51,8 +51,8 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,c
 # Set Input sources to US + CZ
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'cz')]"
 
-# Set format date & time format to Denmark (there was no CZ option)
-dconf write /system/locale/region "'en_DK.UTF-8'"
+# Set format date & time format to United Kingdom
+dconf write /system/locale/region "'en_GB.UTF-8'"
 
 # Touchbar settings
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
