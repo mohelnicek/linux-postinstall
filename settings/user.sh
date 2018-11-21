@@ -22,13 +22,20 @@
 [[ $(grep -c "alias code" ~/.bashrc 2>/dev/null) -eq 0 ]] && echo "alias code='code .'" >> ~/.bashrc
 [[ $(grep -c "alias powershell" ~/.bashrc 2>/dev/null) -eq 0 ]] && echo "alias powershell='docker run -it microsoft/powershell'" >> ~/.bashrc
 
-# Set bash tab completion to ignore case
+# Add user inputrc file
 [[ -e ~/.inputrc ]] && (
 	[[ $(grep -c "include /etc/inputrc" ~/.inputrc) -eq 0 ]] && (echo "\$include /etc/inputrc"; cat ~/.inputrc) > ~/.inputrc
 ) || (
 	echo "\$include /etc/inputrc" > ~/.inputrc
 )
+# Ignore character case in completion
 [[ $(grep -c "set completion-ignore-case on" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "set completion-ignore-case on" >> ~/.inputrc
+# Cycle through completion posibilities
+[[ $(grep -c "set show-all-if-ambiguous on" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "set show-all-if-ambiguous on" >> ~/.inputrc
+[[ $(grep -c "set show-all-if-unmodified on" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "set show-all-if-unmodified on" >> ~/.inputrc
+[[ $(grep -c "set menu-complete-display-prefix on" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "set menu-complete-display-prefix on" >> ~/.inputrc
+[[ $(grep -c "\"\t\": menu-complete" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "\"\t\": menu-complete" >> ~/.inputrc
+[[ $(grep -c "\"\e[Z\": menu-complete-backward" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "\"\e[Z\": menu-complete-backward" >> ~/.inputrc
 
 # Create symlink to media for current user
 [[ -L ~/media ]] || ln -s /media/$USERNAME ~/media
@@ -41,9 +48,11 @@
 }
 
 # Copy VSCode settings
-mkdir -p "~/.config/Code/User"
+mkdir -p ~/.config/Code/User
 [[ -f ~/.config/Code/User/settings.json ]] && mv ~/.config/Code/User/settings.json ~/.config/Code/User/settings.json.bak
 cp ./user/vscode/settings.json ~/.config/Code/User/settings.json
+[[ -f ~/.config/Code/User/keybindings.json ]] && mv ~/.config/Code/User/keybindings.json ~/.config/Code/User/keybindings.json.bak
+cp ./user/vscode/keybindings.json ~/.config/Code/User/keybindings.json
 
 # Lower volume to 0%
 amixer -D pulse sset Master 0%
