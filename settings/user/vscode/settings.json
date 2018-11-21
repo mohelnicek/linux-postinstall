@@ -24,5 +24,5 @@
     "search.smartCase": true,
     "zenMode.centerLayout": false,
     "zenMode.hideActivityBar": false,
+    "window.titleBarStyle": "custom",
 }
-
