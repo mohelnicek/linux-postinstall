@@ -12,3 +12,8 @@
 
 # Set internal graphics as default for HP Pavilion laptop
 [[ $(sudo dmidecode | grep -c -i "HP Pavilion")  -ne 0 ]] && sudo system76-power graphics intel && sudo system76-power graphics power auto
+
+[ $(grep -c -i "# BrowseProtocols none" /etc/cups/cups-browsed.conf) -eq 1 ] && sudo sed -i.bak -E -e "s/^# (BrowseProtocols none)/\1/" /etc/cups/cups-browsed.conf
+sudo systemctl restart cups-browsed
+sudo systemctl restart cups
+
