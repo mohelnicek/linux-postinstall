@@ -47,7 +47,7 @@ sudo apt install -y \
     virtualbox virtualbox-ext-pack  `# virtualization`
 
 # Install snap apps
-sudo snap install --classic vscode
+sudo snap install --classic code
 sudo snap install --classic atom
 sudo snap install discord
 sudo snap install brave
