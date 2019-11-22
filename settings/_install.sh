@@ -35,7 +35,7 @@ sudo apt install -y \
     git  `# documentation and version control` \
     wine32 wine64 playonlinux steam  `# windows compatibility and games` \
     inkscape inkscape-open-symbols svgtune gimp  `# image tools` \
-    blender vlc obs-studio simplescreenrecorder youtube-dl  `# video tools` \
+    blender kdenlive vlc obs-studio simplescreenrecorder youtube-dl  `# video tools` \
     audacity soundconverter easytag  `# audio tools` \
     graphviz gnuplot  `# graph visualization` \
     ntfs-3g mtp-tools  `# file system support` \
@@ -50,6 +50,7 @@ sudo apt install -y \
 sudo snap install --classic code
 sudo snap install discord
 sudo snap install brave
+sudo snap install --classic microk8s
 
 # Install vscode extensions
 code --install-extension EditorConfig.EditorConfig
