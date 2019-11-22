@@ -31,24 +31,23 @@ sudo apt install -y \
     vim  `# text editors` \
     texlive-full gummi  `# latex` \
     chromium-browser thunderbird thunderbird-locale-cs google-chrome-stable  `# browser/e-mail` \
-    python python3 python3-pip perl ruby jekyll nodejs npm php composer valgrind haskell-platform rustc cargo openjdk-8-jre openjdk-8-jdk openjdk-11-jre openjdk-11-jdk scilab gnat  `# programming` \
-    epydoc-doc git  `# documentation and version control` \
+    python python3 python3-pip perl nodejs npm php composer valgrind openjdk-11-jre openjdk-11-jdk scilab  `# programming` \
+    git  `# documentation and version control` \
     wine32 wine64 playonlinux steam  `# windows compatibility and games` \
     inkscape inkscape-open-symbols svgtune gimp  `# image tools` \
-    blender openshot vlc obs-studio simplescreenrecorder youtube-dl  `# video tools` \
+    blender vlc obs-studio simplescreenrecorder youtube-dl  `# video tools` \
     audacity soundconverter easytag  `# audio tools` \
     graphviz gnuplot  `# graph visualization` \
     ntfs-3g mtp-tools  `# file system support` \
     remmina remmina-plugin-rdp remmina-plugin-vnc remmina-plugin-xdmcp freerdp-x11  `# remote control` \
     mc doublecmd-qt krusader kdiff3 krename kate  `# file manager + plugins` \
-    fakeroot simple-scan screen picocom nmap lsof arp-scan lsscsi gddrescue gdebi-core cifs-utils nfs-common tmux screenfetch snapd docker-ce virt-viewer  `# system utilities` \
+    fakeroot simple-scan screen picocom nmap lsof arp-scan lsscsi gddrescue gdebi-core cifs-utils nfs-common tmux screenfetch snapd virt-viewer  `# system utilities` \
     gnome-shell-extension-caffeine gnome-shell-extension-weather gnome-shell-extension-better-volume gnome-shell-extension-dash-to-panel gnome-shell-extension-system-monitor  `# gnome shell extensions` \
     qgis google-earth-pro-stable  `# maps and gis` \
-    virtualbox virtualbox-ext-pack  `# virtualization`
+    virtualbox virtualbox-ext-pack docker-ce  `# virtualization and containers`
 
 # Install snap apps
 sudo snap install --classic code
-sudo snap install --classic atom
 sudo snap install discord
 sudo snap install brave
 
@@ -57,10 +56,6 @@ code --install-extension EditorConfig.EditorConfig
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension ms-python.python
 code --install-extension octref.vetur
-code --install-extension sdras.night-owl
-
-# Pull docker images
-sudo docker pull microsoft/powershell:latest
 
 # Teamviewer
 #wget -O /tmp/teamviewer_i386.deb https://download.teamviewer.com/download/teamviewer_i386.deb
