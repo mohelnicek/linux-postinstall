@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 function echo_green {
 	echo -e "\n\n\e[2;30;42m$1\e[0m\n"

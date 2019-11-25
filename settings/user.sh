@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Force colors in tmux
 [[ $(grep -c "#force_color_prompt=" ~/.bashrc 2>/dev/null) -eq 0 ]] || sed -i.bak '/force_color_prompt=/s/^#//g' ~/.bashrc

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Enable network time
 #sudo timedatectl set-ntp true

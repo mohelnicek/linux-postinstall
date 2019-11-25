@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Switch to noninteractive mode
 export DEBIAN_FRONTEND=noninteractive
