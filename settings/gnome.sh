@@ -1,13 +1,20 @@
 #!/bin/bash
 
 # Custom keybinds - Ctrl+Alt+T gnome-terminal, Ctrl+Alt+L lock screen
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
+# Open terminal
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Primary><Alt>t'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command "'gnome-terminal'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name "'open gnome terminal'"
+# Lock screen
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding "'<Primary><Alt>l'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command "'dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name "'lock screen'"
+# Flameshot printscreen
+dconf write /org/gnome/settings-daemon/plugins/media-keys/screenshot "''"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/binding "'Print'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/name "'screenshot'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/command "'flameshot gui'"
 
 # Keybind - Alt+F4 to close windows
 dconf write /org/gnome/desktop/wm/keybindings/close "['<Alt>F4']"
