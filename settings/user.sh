@@ -12,15 +12,8 @@
 [[ $(grep -c "status-right" ~/.tmux.conf 2>/dev/null) -eq 0 ]] && echo 'set -g status-right "#[fg=black]#H"' >> ~/.tmux.conf
 [[ $(grep -c "mouse on" ~/.tmux.conf 2>/dev/null) -eq 0 ]] && echo "set -g mouse on" >> ~/.tmux.conf
 
-# Copy template config files
-[[ -f ~/.editorconfig ]] || cp ./user/.editorconfig ~
-[[ -f ~/.gitignore ]] || cp ./user/.gitignore ~
-
 # Add bash aliases
 [[ $(grep -c "alias cd.." ~/.bashrc 2>/dev/null) -eq 0 ]] && echo "alias cd..='cd ..'" >> ~/.bashrc
-[[ $(grep -c "alias atom" ~/.bashrc 2>/dev/null) -eq 0 ]] && echo "alias atom='atom .'" >> ~/.bashrc
-[[ $(grep -c "alias code" ~/.bashrc 2>/dev/null) -eq 0 ]] && echo "alias code='code .'" >> ~/.bashrc
-[[ $(grep -c "alias powershell" ~/.bashrc 2>/dev/null) -eq 0 ]] && echo "alias powershell='docker run -it microsoft/powershell'" >> ~/.bashrc
 
 # Add user inputrc file
 [[ -e ~/.inputrc ]] && (
@@ -30,6 +23,7 @@
 )
 # Ignore character case in completion
 [[ $(grep -c "set completion-ignore-case on" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "set completion-ignore-case on" >> ~/.inputrc
+
 # Cycle through completion posibilities
 [[ $(grep -c "set show-all-if-ambiguous on" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "set show-all-if-ambiguous on" >> ~/.inputrc
 [[ $(grep -c "set show-all-if-unmodified on" ~/.inputrc 2>/dev/null) -eq 0 ]] && echo "set show-all-if-unmodified on" >> ~/.inputrc
