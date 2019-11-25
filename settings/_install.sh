@@ -34,7 +34,7 @@ sudo apt install -y \
     python python3 python3-pip perl nodejs npm php composer valgrind openjdk-11-jre openjdk-11-jdk scilab  `# programming` \
     git  `# documentation and version control` \
     wine32 wine64 playonlinux steam  `# windows compatibility and games` \
-    inkscape inkscape-open-symbols svgtune gimp  `# image tools` \
+    flameshot inkscape inkscape-open-symbols svgtune gimp  `# image tools` \
     blender kdenlive vlc obs-studio simplescreenrecorder youtube-dl  `# video tools` \
     audacity soundconverter easytag  `# audio tools` \
     graphviz gnuplot  `# graph visualization` \
@@ -57,6 +57,7 @@ code --install-extension EditorConfig.EditorConfig
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension ms-python.python
 code --install-extension octref.vetur
+code --install-extension mhutchie.git-graph
 
 # Teamviewer
 #wget -O /tmp/teamviewer_i386.deb https://download.teamviewer.com/download/teamviewer_i386.deb
