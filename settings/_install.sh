@@ -58,6 +58,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension ms-python.python
 code --install-extension octref.vetur
 code --install-extension mhutchie.git-graph
+code --install-extension taniarascia.new-moon-vscode
 
 # Teamviewer
 #wget -O /tmp/teamviewer_i386.deb https://download.teamviewer.com/download/teamviewer_i386.deb
