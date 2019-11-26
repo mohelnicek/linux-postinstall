@@ -31,4 +31,6 @@
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": true,
     "editor.minimap.renderCharacters": false,
+    "workbench.tree.indent": 18,
+    "workbench.tree.renderIndentGuides": "none",
 }
