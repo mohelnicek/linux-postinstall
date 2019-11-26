@@ -41,7 +41,7 @@ sudo apt install -y \
     ntfs-3g mtp-tools  `# file system support` \
     remmina remmina-plugin-rdp remmina-plugin-vnc remmina-plugin-xdmcp freerdp-x11  `# remote control` \
     mc doublecmd-qt krusader kdiff3 krename kate  `# file manager + plugins` \
-    fakeroot simple-scan screen picocom nmap lsof arp-scan lsscsi gddrescue gdebi-core cifs-utils nfs-common tmux screenfetch snapd virt-viewer  `# system utilities` \
+    fakeroot simple-scan screen picocom nmap lsof arp-scan lsscsi gparted gddrescue gdebi-core cifs-utils nfs-common tmux screenfetch snapd virt-viewer  `# system utilities` \
     gnome-shell-extension-caffeine gnome-shell-extension-weather gnome-shell-extension-better-volume gnome-shell-extension-dash-to-panel gnome-shell-extension-system-monitor  `# gnome shell extensions` \
     qgis google-earth-pro-stable  `# maps and gis` \
     virtualbox virtualbox-ext-pack docker-ce  `# virtualization and containers`
