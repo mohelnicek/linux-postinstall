@@ -79,6 +79,9 @@ gsettings set org.gnome.desktop.media-handling autorun-never true
 # Disable screen rotation
 gsettings set org.gnome.settings-daemon.peripherals.touchscreen orientation-lock true
 
+# Set font scaling factor with 4K screens
+[[ $(xrandr | grep -c "3840x2160" 2>/dev/null) -gt 0 ]] && gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
+
 ##############
 # Extensions #
 ##############
